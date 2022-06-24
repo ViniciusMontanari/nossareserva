@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const PhotoGet = () => {
-  const [id, setId] = React.useState('');
+  const [id, setId] = React.useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    fetch(`https://dogsapi.origamid.dev/json/api/photo/${id}`)
+    fetch(`http://127.0.0.1:8000/`)
       .then((response) => {
         console.log(response);
         return response.json();
